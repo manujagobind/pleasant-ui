@@ -1,2 +1,3 @@
-# css-component-lib
+# Pleasant UI
 A CSS component library
+

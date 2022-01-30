@@ -1,0 +1,47 @@
+.btn {
+    box-sizing: border-box;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    text-align: center;
+    height: 2rem;
+    background-color: var(--ink-primary);
+    color: white;
+    cursor: pointer;
+}
+
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn.btn-outline {
+    border: 1px solid var(--ink-primary);
+    background-color: white;
+    color: var(--ink-primary);
+}
+
+.btn.btn-link {
+    border: none;
+    background-color: inherit;
+    color: var(--ink-primary);
+}
+
+.btn.btn-danger {
+    background-color: var(--ink-red);
+}
+
+.btn.btn-danger.btn-outline {
+    background-color: white;
+    border-color: var(--ink-red);
+    color: var(--ink-red);
+}
+
+.btn.btn-danger.btn-link {
+    background-color: inherit;
+    color: var(--ink-red);
+}
+
+.btn.btn-wide {
+    width: 100%;
+}
