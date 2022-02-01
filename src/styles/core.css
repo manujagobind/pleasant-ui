@@ -1,11 +1,4 @@
-:root {
-    --ink-primary: #0468d7;
-    
-    --ink-red: #d43324;
-    --ink-green: #14c2ad;
-
-    --ink-grey: #dadce0;
-}
+@import url("./variables.css");
 
 .container {
     box-sizing: border-box;

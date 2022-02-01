@@ -1,3 +1,5 @@
+@import url("./variables.css");
+
 .demo {
     background-color: var(--ink-grey);
     max-width: 40rem;
