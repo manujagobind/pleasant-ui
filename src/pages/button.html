@@ -8,8 +8,10 @@
     <meta name="description" content="Pleasant UI - A CSS component library.">
     <title>Buttons | Pleasant UI</title>
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/demo.css">
+    <link rel="stylesheet" href="../styles/docs.css">
     <link rel="stylesheet" href="../styles/button.css">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
 </head>
 <body>
     <header>
@@ -17,11 +19,32 @@
     </header>
     <main>
         <section>
+            <p>The following CSS imports are required to use the buttons component.<br>
+                The FontAwesome import is required only if you plan to use buttons with icons.</p>
+            <div class="container code">
+                <pre>
+                    <code class="language-css">
+    @import url("https://pleasant-ui.netlify.app/src/styles/button.css");
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
             <h2>Basic</h2>
             <div class="container-flex demo">
                 <button class="btn">Solid</button>
                 <button class="btn btn-outline">Outline</button>
                 <button class="btn btn-link">Link</button>
+            </div>
+            <div class="container code">
+                <pre>
+                    <code class="language-html">
+    &lt;button class="btn"&gt;Solid&lt;/button&gt;
+    &lt;button class="btn btn-outline"&gt;Outline&lt;/button&gt;
+    &lt;button class="btn btn-link"&gt;Link&lt;/button&gt;
+                    </code>
+                </pre>
             </div>
         </section>
         <section>
@@ -30,6 +53,15 @@
                 <a href="#" class="btn">Solid</a>
                 <a href="#" class="btn btn-outline">Outline</a>
                 <a href="#" class="btn btn-link">Link</a>
+            </div>
+            <div class="container code">
+                <pre>
+                    <code class="language-html">
+    &lt;a href="#" class="btn"&gt;Solid&lt;/a&gt;
+    &lt;a href="#" class="btn btn-outline"&gt;Outline&lt;/a&gt;
+    &lt;a href="#" class="btn btn-link"&gt;Link&lt;/a&gt;        
+                    </code>
+                </pre>
             </div>
         </section>
         <section>
@@ -59,6 +91,28 @@
                     <i class="fas fa-heart"></i>
                 </button>
             </div>
+            <div class="container code">
+                <pre>
+                    <code class="language-html">
+    &lt;button class="btn"&gt;
+        &lt;i class="fas fa-heart"&gt;&lt;/i&gt;
+        Solid
+    &lt;/button&gt;
+    &lt;button class="btn btn-outline"&gt;
+        &lt;i class="fas fa-heart"&gt;&lt;/i&gt;
+        Outline
+    &lt;/button&gt;
+    &lt;button class="btn btn-link"&gt;
+        &lt;i class="fas fa-heart"&gt;&lt;/i&gt;
+        Link
+    &lt;/button&gt;
+
+    &lt;button class="btn"&gt;Solid&lt;/button&gt;
+    &lt;button class="btn btn-outline"&gt;Outline&lt;/button&gt;
+    &lt;button class="btn btn-link"&gt;Link&lt;/button&gt;
+                    </code>
+                </pre>
+            </div>
         </section>
         <section>
             <h2>Full Width</h2>
@@ -74,28 +128,66 @@
                     Outline
                 </button>
             </div>
+            <div class="container code">
+                <pre>
+                    <code class="language-html">
+    &lt;button class="btn btn-wide"&gt;Solid&lt;/button&gt;
+    &lt;button class="btn btn-wide"&gt;
+        &lt;i class="fas fa-heart"&gt;&lt;/i&gt;
+        Solid
+    &lt;/button&gt;
+    &lt;button class="btn btn-wide btn-outline"&gt;Outline&lt;/button&gt;
+    &lt;button class="btn btn-outline"&gt;
+        &lt;i class="fas fa-heart"&gt;&lt;/i&gt;
+        Outline
+    &lt;/button&gt;
+                    </code>
+                </pre>
+            </div>
         </section>
         <section>
-        <h2>Specific Actions</h2>
-        <div class="container-flex demo">
-            <button class="btn btn-danger">Danger</button>
-            <button class="btn btn-danger btn-outline">Danger</button>
-            <button class="btn btn-danger btn-link">Danger</button>
-        </div>
-        <div class="container-flex demo">
-            <button class="btn btn-danger">
-                <i class="fas fa-exclamation-circle"></i>
-                Danger
-            </button>
-            <button class="btn btn-danger btn-outline">
-                <i class="fas fa-exclamation-circle"></i>
-                Danger
-            </button>
-            <button class="btn btn-danger btn-link">
-                <i class="fas fa-exclamation-circle"></i>
-                Danger
-            </button>
-        </div>
+            <h2>Specific Actions</h2>
+            <div class="container-flex demo">
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-danger btn-outline">Danger</button>
+                <button class="btn btn-danger btn-link">Danger</button>
+            </div>
+            <div class="container-flex demo">
+                <button class="btn btn-danger">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Danger
+                </button>
+                <button class="btn btn-danger btn-outline">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Danger
+                </button>
+                <button class="btn btn-danger btn-link">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Danger
+                </button>
+            </div>
+            <div class="container code">
+                <pre>
+                    <code class="language-html">
+    &lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+    &lt;button class="btn btn-danger btn-outline"&gt;Danger&lt;/button&gt;
+    &lt;button class="btn btn-danger btn-link"&gt;Danger&lt;/button&gt;
+
+    &lt;button class="btn btn-danger"&gt;
+        &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
+        Danger
+    &lt;/button&gt;
+    &lt;button class="btn btn-danger btn-outline"&gt;
+        &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
+        Danger
+    &lt;/button&gt;
+    &lt;button class="btn btn-danger btn-link"&gt;
+        &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
+        Danger
+    &lt;/button&gt;
+                    </code>
+                </pre>
+            </div>
         </section>
         <section>
             <div class="container">
@@ -103,5 +195,8 @@
             </div>
         </section>
     </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll()</script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+@import url("./variables.css");
+
+:root {
+    --w-demo-container: 50em;
+}
+
+.demo {
+    background-color: var(--ink-grey);
+    max-width: var(--w-demo-container);
+    border-radius: 1rem;
+}
+
+.code {
+    max-width: var(--w-demo-container);
+    padding: 0;
+}
