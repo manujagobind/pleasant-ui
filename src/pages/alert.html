@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gobind Manuja">
+    <meta name="description" content="Pleasant UI - A CSS component library.">
+    <title>Alerts | Pleasant UI</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/docs.css">
+    <link rel="stylesheet" href="../styles/alert.css">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+</head>
+<body>
+    <header>
+        <h1>Alerts Component</h1>
+    </header>
+    <main>
+        <section>
+            <p>The following CSS import is required to use the alerts component.<br>
+                The FontAwesome import is required only if you plan to use icons in your alerts.</p>
+            <div class="container code">
+                <pre>
+                    <code class="language-css">
+    @import url("https://pleasant-ui.netlify.app/src/styles/alert.css");
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <h2>Simple Alerts</h2>
+            <p>Alerts take 80% of the parent container's width and are center aligned.<br>
+                You can also add icons to the alerts if you'd like.</p>
+            <div class="container-flex-col demo">
+                <div class="alert alert-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p>This is an info alert.</p>
+                </div>
+                <div class="alert alert-warn">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>This is a warning alert.</p>
+                </div>
+                <div class="alert alert-success">
+                    <i class="fas fa-check-circle"></i>
+                    <p>This is a success alert.</p>
+                </div>
+                <div class="alert alert-danger">
+                    <i class="fas fa-times-circle"></i>
+                    <p>This is a danger alert.</p>
+                </div>
+            </div>
+            <div class="container code">
+                <pre>
+                    <code class="language-html">
+    &lt;div class="alert alert-info"&gt;
+        &lt;i class="fas fa-question-circle"&gt;&lt;/i&gt;
+        &lt;p&gt;This is an info alert.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="alert alert-warn"&gt;
+        &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
+        &lt;p&gt;This is a warning alert.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="alert alert-success"&gt;
+        &lt;i class="fas fa-check-circle"&gt;&lt;/i&gt;
+        &lt;p&gt;This is a success alert.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="alert alert-danger"&gt;
+        &lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;
+        &lt;p&gt;This is a danger alert.&lt;/p&gt;
+    &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <a href="/">← Home</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll()</script>
+</body>
+</html>
