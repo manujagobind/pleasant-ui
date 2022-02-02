@@ -11,6 +11,10 @@
     background-color: var(--ink-primary);
     color: white;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
 }
 
 a.btn {

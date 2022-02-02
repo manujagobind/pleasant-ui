@@ -8,6 +8,7 @@
     background-color: var(--ink-grey);
     max-width: var(--w-demo-container);
     border-radius: 1rem;
+    overflow-x: scroll;
 }
 
 .code {
