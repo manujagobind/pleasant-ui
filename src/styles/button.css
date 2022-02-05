@@ -1,0 +1,55 @@
+@import url("./variables.css");
+
+.btn {
+    box-sizing: border-box;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+    height: 2rem;
+    background-color: var(--ink-primary);
+    color: var(--ink-white);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn.btn-outline {
+    border: 1px solid var(--ink-primary);
+    background-color: var(--ink-white);
+    color: var(--ink-primary);
+}
+
+.btn.btn-link {
+    padding: 0.5rem;
+    border: none;
+    background-color: inherit;
+    color: var(--ink-primary);
+}
+
+.btn.btn-danger {
+    background-color: var(--ink-red);
+}
+
+.btn.btn-danger.btn-outline {
+    background-color: var(--ink-white);
+    border-color: var(--ink-red);
+    color: var(--ink-red);
+}
+
+.btn.btn-danger.btn-link {
+    background-color: inherit;
+    color: var(--ink-red);
+}
+
+.btn.btn-wide {
+    width: 100%;
+}
