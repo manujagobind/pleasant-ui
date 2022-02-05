@@ -1,0 +1,39 @@
+@import url("./variables.css");
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .input-group:first-child {
+    margin-top: 0;
+}
+
+.form .input-group label {
+   padding: 0.5em 0;
+   color: var(--ink-grey-dark);
+   font-weight: bold;
+}
+
+.form .input-group input {
+    padding: 0.8em;
+    color: var(--ink-grey-light);
+    background-color: var(--ink-white);
+    border: none;
+}
+
+.form .input-group.warn input {
+    color: var(--ink-orange);
+    border: 2px solid var(--ink-orange);
+}
+
+.form .input-group.error input {
+    color: var(--ink-red);
+    border: 2px solid var(--ink-red);
+}
