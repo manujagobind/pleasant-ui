@@ -12,10 +12,6 @@
     gap: 1rem;
 }
 
-.alert p::before {
-    content: url();
-}
-
 .alert-info {
     background-color: var(--ink-blue);
 }
@@ -30,4 +26,9 @@
 
 .alert-danger {
     background-color: var(--ink-red);
+}
+
+.alert .alert-close:last-child {
+    margin-left: auto;
+    cursor: pointer;
 }
