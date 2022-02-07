@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gobind Manuja">
+    <meta name="description" content="Pleasant UI - A CSS component library.">
+    <title>Badges | Pleasant UI</title>
+    <link rel="stylesheet" href="../styles/docs.css">
+    <link rel="stylesheet" href="../styles/badge.css">
+    <link rel="stylesheet" href="../styles/avatar.css">
+    <link rel="stylesheet" href="../styles/image.css">
+</head>
+<body>
+    <header>
+        <h1>Badge Component</h1>
+    </header>
+    <main>
+        <section>
+            <p>The following CSS import is required to use the badge component.<br>
+            <div class="container code">
+                <pre>
+                    <code class="language-css">
+    @import url("https://pleasant-ui.netlify.app/src/styles/badge.css");
+    @import url("https://pleasant-ui.netlify.app/src/styles/avatar.css");
+    @import url("https://pleasant-ui.netlify.app/src/styles/image.css");
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <h2>Badge on Avatars</h2>
+            <div class="container-flex demo">
+                <div class="avatar-xl has-badge">
+                    <img src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg" alt="Sample avatar" class="img-responsive img-round">
+                    <span class="badge badge-online"></span>
+                </div>
+                <div class="avatar-lg has-badge">
+                    <img src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg" alt="Sample avatar" class="img-responsive img-round">
+                    <span class="badge badge-offline"></span>
+                </div>
+                <div class="avatar-md has-badge">
+                    <img src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg" alt="Sample avatar" class="img-responsive img-round">
+                    <span class="badge badge-idle"></span>
+                </div>
+                <div class="avatar-sm has-badge">
+                    <img src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg" alt="Sample avatar" class="img-responsive img-round">
+                    <span class="badge badge-busy"></span>
+                </div>
+            </div>
+            <div class="container code">
+                <pre>
+                    <code class="language-html">
+    &lt;div class="avatar-xl has-badge"&gt;
+        &lt;img src="https://picsum.photos/300/300" alt="Sample avatar" class="img-responsive img-round"&gt;
+        &lt;span class="badge badge-online"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="avatar-lg has-badge"&gt;
+        &lt;img src="https://picsum.photos/300/300" alt="Sample avatar" class="img-responsive img-round"&gt;
+        &lt;span class="badge badge-offline"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="avatar-md has-badge"&gt;
+        &lt;img src="https://picsum.photos/300/300" alt="Sample avatar" class="img-responsive img-round"&gt;
+        &lt;span class="badge badge-idle"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="avatar-sm has-badge"&gt;
+        &lt;img src="https://picsum.photos/300/300" alt="Sample avatar" class="img-responsive img-round"&gt;
+        &lt;span class="badge badge-bust"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <a href="/">← Home</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
