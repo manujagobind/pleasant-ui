@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gobind Manuja">
+    <meta name="description" content="Pleasant UI - A CSS component library.">
+    <title>Inputs | Pleasant UI</title>
+    <link rel="stylesheet" href="../styles/docs.css">
+    <link rel="stylesheet" href="../styles/input.css">
+</head>
+<body>
+    <header>
+        <h1>Inputs Component</h1>
+    </header>
+    <main>
+        <section>
+            <p>The following CSS import is required to use the input component.<br>
+            <div class="container code">
+                <pre>
+                    <code class="language-css">
+    @import url("https://pleasant-ui.netlify.app/src/styles/input.css");
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <h2>Input</h2>
+            <div class="container-flex-col demo">
+                <form action="#" class="form">
+                    <div class="input-group">
+                        <label for="text-field-1">Label</label>
+                        <input type="text" name="text-field-1" id="text-field-1" placeholder="Input">
+                    </div>
+                    <div class="input-group warn">
+                        <label for="text-field-2">Label</label>
+                        <input type="text" name="text-field-2" id="text-field-2" placeholder="Input Warning">
+                    </div>
+                    <div class="input-group error">
+                        <label for="text-field-3">Label</label>
+                        <input type="text" name="text-field-3" id="text-field-3" placeholder="Input Error">
+                    </div>
+                </form>
+            </div>
+            <div class="container code">
+                <pre>
+                    <code class="language-html">
+    &lt;form action="#" class="form"&gt;
+        &lt;div class="input-group"&gt;
+            &lt;label for="text-field-1"&gt;Label&lt;/label&gt;
+            &lt;input type="text" name="text-field-1" id="text-field-1" placeholder="Input"&gt;
+        &lt;/div&gt;
+        &lt;div class="input-group warn"&gt;
+            &lt;label for="text-field-2">Label&lt;/label&gt;
+            &lt;input type="text" name="text-field-2" id="text-field-2" placeholder="Input Warning"&gt;
+        &lt;/div&gt;
+        &lt;div class="input-group error"&gt;
+            &lt;label for="text-field-3">Label&lt;/label&gt;
+            &lt;input type="text" name="text-field-3" id="text-field-3" placeholder="Input Error"&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <a href="/">← Home</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
