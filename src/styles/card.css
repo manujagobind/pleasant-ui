@@ -1,0 +1,18 @@
+@import url("./core.css");
+
+.card {
+    display: flex;
+}
+
+.card-row {
+    display: flex;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.card.card-horizontal {
+    flex-direction: column;
+}
