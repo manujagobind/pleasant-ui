@@ -1,0 +1,28 @@
+@import url("./core.css");
+
+:root {
+    --w-avatar-sm: 2rem;
+    --w-avatar-md: 3.5rem;
+    --w-avatar-lg: 5rem;
+    --w-avatar-xl: 7.5rem;
+}
+
+.avatar-sm {
+    height: var(--w-avatar-sm);
+    width: var(--w-avatar-sm);
+}
+
+.avatar-md {
+    height: var(--w-avatar-md);
+    width: var(--w-avatar-md);
+}
+
+.avatar-lg {
+    height: var(--w-avatar-lg);
+    width: var(--w-avatar-lg);
+}
+
+.avatar-xl {
+    height: var(--w-avatar-xl);
+    width: var(--w-avatar-xl);
+}
