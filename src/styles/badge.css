@@ -1,0 +1,75 @@
+@import url("./core.css");
+@import url("./avatar.css");
+
+.has-badge {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: var(--ink-red);
+    top: -0.4rem;
+    right: -0.6rem;
+    color: white;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-online {
+    background-color: var(--ink-green);
+}
+
+.badge-offline {
+    background-color: var(--ink-grey-light);
+}
+
+.badge-idle {
+    background-color: var(--ink-orange);
+}
+
+.badge-busy {
+    background-color: var(--ink-red);
+}
+
+/* Badge on Avatars */
+
+.avatar-sm .badge {
+    height: calc(0.2 * var(--w-avatar-sm));
+    width: calc(0.2 * var(--w-avatar-sm));
+    top: unset;
+    left: unset;
+    bottom: 0;
+    right: calc(0.1 * var(--w-avatar-sm));
+}
+
+.avatar-md .badge {
+    height: calc(0.2 * var(--w-avatar-md));
+    width: calc(0.2 * var(--w-avatar-md));
+    top: unset;
+    left: unset;
+    bottom: 0;
+    right: calc(0.1 * var(--w-avatar-md));
+}
+
+.avatar-lg .badge {
+    height: calc(0.2 * var(--w-avatar-lg));
+    width: calc(0.2 * var(--w-avatar-lg));
+    top: unset;
+    left: unset;
+    bottom: 0;
+    right: calc(0.1* var(--w-avatar-lg));
+}
+
+.avatar-xl .badge {
+    height: calc(0.15 * var(--w-avatar-xl));
+    width: calc(0.15 * var(--w-avatar-xl));
+    top: unset;
+    left: unset;
+    bottom: 0;
+    right: calc(0.15 * var(--w-avatar-xl));
+}
