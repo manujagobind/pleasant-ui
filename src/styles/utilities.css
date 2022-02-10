@@ -1,0 +1,22 @@
+.layer {
+    position: relative;
+}
+
+.overlay-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}

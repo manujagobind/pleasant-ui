@@ -1,18 +1,42 @@
-@import url("./core.css");
+:root {
+    --card-padding: 0.5rem;
+    --card-vertical-width: 20rem;
+    --card-horizontal-width: 32rem;
+    --card-border-radius: 10px;
+}
 
 .card {
-    display: flex;
-}
-
-.card-row {
-    display: flex;
-}
-
-.card-col {
+    height: fit-content;
+    width: var(--card-vertical-width);
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-color: var(--ink-white);
 }
 
 .card.card-horizontal {
+    flex-direction: row;
+    width: var(--card-horizontal-width);
+}
+
+.card .card-section {
+    padding: var(--card-padding);
+    box-sizing: border-box;
+}
+
+.card.card-horizontal .card-column {
+    display: flex;
     flex-direction: column;
+}
+
+.card .card-section.card-actions:last-of-type {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 550px) {
+    .card.card-horizontal {
+        flex-direction: column;
+        max-width: var(--card-vertical-width);
+    }
 }

@@ -8,9 +8,7 @@
     <meta name="description" content="Pleasant UI - A CSS component library.">
     <title>Cards | Pleasant UI</title>
     <link rel="stylesheet" href="../styles/docs.css">
-    <link rel="stylesheet" href="../styles/card.css">
-    <link rel="stylesheet" href="../styles/image.css">
-    <link rel="stylesheet" href="../styles/button.css">
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
     <header>
@@ -18,17 +16,62 @@
     </header>
     <main>
         <section>
-            <h2>Vertical Cards</h2>
-            <div class="container demo">
+            <h2>Text Only Cards</h2>
+            <div class="container-flex demo">
                 <div class="card">
-                    <img class="img-responsive" src="https://picsum.photos/300/300" alt="Sample image">
+                    <div class="card-section">
+                        <p class="title">Card Title</p>
+                        <p class="sub-title">Subtitle</p>
+                    </div>
+                    <div class="card-section">
+                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora, quis quia officiis sequi eligendi quisquam atque soluta veniam nemo laborum fuga totam hic perspiciatis quasi, accusamus voluptatum reiciendis harum.</p>
+                    </div>
+                    <div class="card-section">
+                        <button class="btn btn-wide">Action</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Vertical Cards</h2>
+            <div class="container-flex demo">
+                <div class="card">
+                    <img class="img-responsive" src="https://picsum.photos/200/200" alt="Sample image">
+                    <div class="card-section">
+                        <p class="title">Card Title</p>
+                        <p class="sub-title">Subtitle</p>
+                    </div>
+                    <div class="card-section">
+                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora, quis quia officiis sequi eligendi quisquam atque soluta veniam nemo laborum fuga totam hic perspiciatis quasi, accusamus voluptatum reiciendis harum.</p>
+                    </div>
+                    <div class="card-section">
+                        <button class="btn btn-wide">Action</button>
+                        <button class="btn btn-wide btn-outline">Action</button>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <h2>Horizontal Cards</h2>
-            <div class="card card-horizontal">
-
+            <div class="container-flex demo">
+                <div class="card card-horizontal">
+                    <div class="card-column">
+                        <img class="img-responsive" src="https://picsum.photos/400/400" alt="Sample image">
+                    </div>
+                    <div class="card-column">
+                        <div class="card-section">
+                            <p class="title">Card Title</p>
+                            <p class="sub-title">Subtitle</p>
+                        </div>
+                        <div class="card-section">
+                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="card-section card-actions">
+                            <button class="btn btn-wide">Action</button>
+                            <button class="btn btn-wide btn-outline">Action</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
@@ -38,7 +81,7 @@
         </section>
     </main>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </body>
 </html>
