@@ -2,10 +2,28 @@
     position: relative;
 }
 
+.overlay-top-left {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
 .overlay-top-right {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.overlay-bottom-left {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.overlay-bottom-right {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
 }
 
 .text-center {

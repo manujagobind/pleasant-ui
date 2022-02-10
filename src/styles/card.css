@@ -6,7 +6,9 @@
 }
 
 .card {
+    box-sizing: border-box;
     height: fit-content;
+    max-inline-size: 100%;
     width: var(--card-vertical-width);
     border-radius: var(--card-border-radius);
     overflow: hidden;
@@ -15,14 +17,21 @@
     background-color: var(--ink-white);
 }
 
+.card.card-shadow {
+    box-shadow: 0px 4px 8px 0px var(--ink-grey-light);
+}
+
 .card.card-horizontal {
     flex-direction: row;
     width: var(--card-horizontal-width);
 }
 
-.card .card-section {
-    padding: var(--card-padding);
+.card .card-block {
     box-sizing: border-box;
+}
+
+.card .card-block.card-padded-block {
+    padding: var(--card-padding);
 }
 
 .card.card-horizontal .card-column {
@@ -30,7 +39,7 @@
     flex-direction: column;
 }
 
-.card .card-section.card-actions:last-of-type {
+.card .card-block.card-actions {
     margin-top: auto;
 }
 
