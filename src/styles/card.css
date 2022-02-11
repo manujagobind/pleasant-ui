@@ -30,7 +30,8 @@
     box-sizing: border-box;
 }
 
-.card .card-block.card-padded-block {
+.card .card-padded-block {
+    box-sizing: border-box;
     padding: var(--card-padding);
 }
 
@@ -39,7 +40,8 @@
     flex-direction: column;
 }
 
-.card .card-block.card-actions {
+.card .card-block.card-actions,
+.card .card-padded-block.card-actions {
     margin-top: auto;
 }
 

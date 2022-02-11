@@ -18,3 +18,7 @@
     max-width: var(--w-demo-container);
     padding: 0;
 }
+
+.highlight {
+    color: var(--ink-primary);
+}
