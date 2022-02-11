@@ -1,76 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gobind Manuja">
-    <meta name="description" content="Pleasant UI - A CSS component library.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta name="description" content="Pleasant UI - A CSS component library." />
     <title>Cards | Pleasant UI</title>
-    <link rel="stylesheet" href="../styles/docs.css">
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/docs.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
     <header>
-        <h1>Cards Component</h1>
+      <h1>Cards Component</h1>
     </header>
     <main>
-        <section>
-            <p>
-                A card is a collection of elements grouped together as a single unit.
-                In simple terms, cards are collection of blocks. Each block can have
-                images, text, buttons, etc.
-            </p>
-            <p>
-                A card is a <code>&lt;section&gt;</code> or <code>&lt;div&gt;</code> element
-                decorated with the <span class="highlight">card</span> class. Within this, we
-                have <code>&lt;div&gt;</code> elements decorated with either <span class="highlight">card-block</span>
-                or <span class="highlight">card-padded-block</span>. A <span class="highlight">card-block</span>
-                has no padding and is great for content that take should take full width of the card (eg. images)
-                A <span class="highlight">card-padded-block</span> has padding around it.
-            </p>
-            <p>
-                A card is a stack of one or more of these blocks.
-            </p>
-            <p>
-                Generally, special class <span class="highlight">card-actions</span> can be used along with <span class="highlight">card-block</span>
-                or <span class="highlight">card-padded-block</span> if this block is supposed to have buttons that usually appear at the bottom of the card.
-            </p>
-        </section>
-        <section>
-            <h2>Text Only Cards</h2>
-            <div class="container-flex demo">
-                <div class="card">
-                    <div class="card-padded-block">
-                        <p class="title">Card Title</p>
-                        <p class="sub-title">Subtitle</p>
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora, quis quia officiis sequi eligendi quisquam atque soluta veniam nemo laborum fuga totam hic perspiciatis quasi, accusamus voluptatum reiciendis harum.</p>
-                    </div>
-                    <div class="card-padded-block card-actions">
-                        <button class="btn btn-wide">Action</button>
-                        <button class="btn btn-outline btn-wide">Action</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-padded-block">
-                        <p class="title">Card Title</p>
-                        <p class="sub-title">Subtitle</p>
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora, quis quia officiis sequi eligendi quisquam atque soluta veniam nemo laborum fuga totam hic perspiciatis quasi, accusamus voluptatum reiciendis harum.</p>
-                    </div>
-                    <div class="card-padded-block card-actions">
-                        <button class="btn">Action</button>
-                        <button class="btn btn-outline">Action</button>
-                    </div>
-                </div>
+      <section>
+        <p>
+          A card is a collection of elements grouped together as a single unit.
+          In simple terms, cards are collection of blocks. Each block can have
+          images, text, buttons, etc.
+        </p>
+        <p>
+          A card is a <code>&lt;section&gt;</code> or
+          <code>&lt;div&gt;</code> element decorated with the
+          <span class="highlight">card</span> class. Within this, we have
+          <code>&lt;div&gt;</code> elements decorated with either
+          <span class="highlight">card-block</span> or
+          <span class="highlight">card-padded-block</span>. A
+          <span class="highlight">card-block</span> has no padding and is great
+          for content that take should take full width of the card (eg. images)
+          A <span class="highlight">card-padded-block</span> has padding around
+          it.
+        </p>
+        <p>A card is a stack of one or more of these blocks.</p>
+        <p>
+          Generally, special class
+          <span class="highlight">card-actions</span> can be used along with
+          <span class="highlight">card-block</span> or
+          <span class="highlight">card-padded-block</span> if this block is
+          supposed to have buttons that usually appear at the bottom of the
+          card.
+        </p>
+      </section>
+      <section>
+        <h2>Text Only Cards</h2>
+        <div class="container-flex demo">
+          <div class="card">
+            <div class="card-padded-block">
+              <p class="title">Card Title</p>
+              <p class="sub-title">Subtitle</p>
             </div>
+            <div class="card-padded-block">
+              <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptates tempora, quis quia officiis sequi eligendi quisquam
+                atque soluta veniam nemo laborum fuga totam hic perspiciatis
+                quasi, accusamus voluptatum reiciendis harum.
+              </p>
+            </div>
+            <div class="card-padded-block card-actions">
+              <button class="btn btn-wide">Action</button>
+              <button class="btn btn-outline btn-wide">Action</button>
+            </div>
+          </div>
 
-            <div class="container code">
-                <pre>
+          <div class="card">
+            <div class="card-padded-block">
+              <p class="title">Card Title</p>
+              <p class="sub-title">Subtitle</p>
+            </div>
+            <div class="card-padded-block">
+              <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptates tempora, quis quia officiis sequi eligendi quisquam
+                atque soluta veniam nemo laborum fuga totam hic perspiciatis
+                quasi, accusamus voluptatum reiciendis harum.
+              </p>
+            </div>
+            <div class="card-padded-block card-actions">
+              <button class="btn">Action</button>
+              <button class="btn btn-outline">Action</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container code">
+          <pre>
                     <code>
     &lt;div class="card"&gt;
         &lt;div class="card-padded-block"&gt;
@@ -87,48 +103,66 @@
     &lt;/div&gt;
                     </code>
                 </pre>
+        </div>
+      </section>
+      <section>
+        <h2>Vertical Cards</h2>
+        <div class="container-flex demo">
+          <div class="card">
+            <div class="card-block">
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/350/350"
+                alt="Sample image"
+              />
             </div>
-        </section>
-        <section>
-            <h2>Vertical Cards</h2>
-            <div class="container-flex demo">
-                <div class="card">
-                    <div class="card-block">
-                        <img class="img-responsive" src="https://picsum.photos/350/350" alt="Sample image">
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="title">Card Title</p>
-                        <p class="sub-title">Subtitle</p>
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora, quis quia officiis sequi eligendi quisquam atque soluta veniam nemo laborum fuga totam hic perspiciatis quasi, accusamus voluptatum reiciendis harum.</p>
-                    </div>
-                    <div class="card-padded-block card-actions">
-                        <button class="btn btn-wide">Action</button>
-                        <button class="btn btn-wide btn-outline">Action</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-block layer">
-                        <img class="img-responsive" src="https://picsum.photos/350/350" alt="Sample image">
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="title">Card Title</p>
-                        <p class="sub-title">Subtitle</p>
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora, quis quia officiis sequi eligendi quisquam atque soluta veniam nemo laborum fuga totam hic perspiciatis quasi, accusamus voluptatum reiciendis harum.</p>
-                    </div>
-                    <div class="card-padded-block card-actions">
-                        <button class="btn">Action</button>
-                        <button class="btn btn-outline">Action</button>
-                    </div>
-                </div>
+            <div class="card-padded-block">
+              <p class="title">Card Title</p>
+              <p class="sub-title">Subtitle</p>
             </div>
+            <div class="card-padded-block">
+              <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptates tempora, quis quia officiis sequi eligendi quisquam
+                atque soluta veniam nemo laborum fuga totam hic perspiciatis
+                quasi, accusamus voluptatum reiciendis harum.
+              </p>
+            </div>
+            <div class="card-padded-block card-actions">
+              <button class="btn btn-wide">Action</button>
+              <button class="btn btn-wide btn-outline">Action</button>
+            </div>
+          </div>
 
-            <div class="container code">
-                <pre>
+          <div class="card">
+            <div class="card-block layer">
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/350/350"
+                alt="Sample image"
+              />
+            </div>
+            <div class="card-padded-block">
+              <p class="title">Card Title</p>
+              <p class="sub-title">Subtitle</p>
+            </div>
+            <div class="card-padded-block">
+              <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptates tempora, quis quia officiis sequi eligendi quisquam
+                atque soluta veniam nemo laborum fuga totam hic perspiciatis
+                quasi, accusamus voluptatum reiciendis harum.
+              </p>
+            </div>
+            <div class="card-padded-block card-actions">
+              <button class="btn">Action</button>
+              <button class="btn btn-outline">Action</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container code">
+          <pre>
                     <code>
     &lt;div class="card"&gt;
         &lt;div class="card-block"&gt;
@@ -148,62 +182,84 @@
     &lt;/div&gt;
                     </code>
                 </pre>
+        </div>
+      </section>
+      <section>
+        <h2>Cards with Badges or Text Overlay</h2>
+        <p>
+          Utility classes like <span class="highlight">layer</span> and
+          <span class="highlight">overlay-&lt;x&gt;-&lt;y&gt;</span>
+          can be used to position elements such as text or buttons or icons over
+          another.
+        </p>
+        <p>
+          Decorate the <code>card-block</code> that you want to have an
+          overlayed on it with class <span class="highlight">layer</span> and
+          use the overlay utility class of your choice on one or more children
+          of the <code>card-block</code>.
+        </p>
+        <div class="container-flex demo">
+          <div class="card">
+            <div class="card-block layer">
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/350/350"
+                alt="Sample image"
+              />
+              <button class="btn btn-outline overlay-top-right">
+                <i class="fas fa-heart"></i>
+              </button>
             </div>
-        </section>
-        <section>
-            <h2>Cards with Badges or Text Overlay</h2>
-            <p>
-                Utility classes like <span class="highlight">layer</span> and <span class="highlight">overlay-&lt;x&gt;-&lt;y&gt;</span>
-                can be used to position elements such as text or buttons or icons over another.
-            </p>
-            <p>
-                Decorate the <code>card-block</code> that you want to have an overlayed on it with class <span class="highlight">layer</span>
-                and use the overlay utility class of your choice on one or more children of the <code>card-block</code>.
-            </p>
-            <div class="container-flex demo">
-                <div class="card">
-                    <div class="card-block layer">
-                        <img class="img-responsive" src="https://picsum.photos/350/350" alt="Sample image">
-                        <button class="btn btn-outline overlay-top-right">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="title">Card Title</p>
-                        <p class="sub-title">Subtitle</p>
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora, quis quia officiis sequi eligendi quisquam atque soluta veniam nemo laborum fuga totam hic perspiciatis quasi, accusamus voluptatum reiciendis harum.</p>
-                    </div>
-                    <div class="card-padded-block">
-                        <button class="btn btn-wide">Action</button>
-                        <button class="btn btn-wide btn-outline">Action</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-block layer">
-                        <img class="img-responsive" src="https://picsum.photos/350/350" alt="Sample image">
-                        <button class="btn btn-outline overlay-top-right">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                        <div class="overlay-bottom-left">
-                            <p class="title">Card Title</p>
-                            <p class="sub-title">Subtitle</p>
-                        </div>
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora, quis quia officiis sequi eligendi quisquam atque soluta veniam nemo laborum fuga totam hic perspiciatis quasi, accusamus voluptatum reiciendis harum.</p>
-                    </div>
-                    <div class="card-padded-block">
-                        <button class="btn btn-wide">Action</button>
-                        <button class="btn btn-wide btn-outline">Action</button>
-                    </div>
-                </div>
+            <div class="card-padded-block">
+              <p class="title">Card Title</p>
+              <p class="sub-title">Subtitle</p>
             </div>
+            <div class="card-padded-block">
+              <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptates tempora, quis quia officiis sequi eligendi quisquam
+                atque soluta veniam nemo laborum fuga totam hic perspiciatis
+                quasi, accusamus voluptatum reiciendis harum.
+              </p>
+            </div>
+            <div class="card-padded-block">
+              <button class="btn btn-wide">Action</button>
+              <button class="btn btn-wide btn-outline">Action</button>
+            </div>
+          </div>
 
-            <div class="container code">
-                <pre>
+          <div class="card">
+            <div class="card-block layer">
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/350/350"
+                alt="Sample image"
+              />
+              <button class="btn btn-outline overlay-top-right">
+                <i class="fas fa-heart"></i>
+              </button>
+              <div class="overlay-bottom-left">
+                <p class="title">Card Title</p>
+                <p class="sub-title">Subtitle</p>
+              </div>
+            </div>
+            <div class="card-padded-block">
+              <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptates tempora, quis quia officiis sequi eligendi quisquam
+                atque soluta veniam nemo laborum fuga totam hic perspiciatis
+                quasi, accusamus voluptatum reiciendis harum.
+              </p>
+            </div>
+            <div class="card-padded-block">
+              <button class="btn btn-wide">Action</button>
+              <button class="btn btn-wide btn-outline">Action</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container code">
+          <pre>
                     <code>
     &lt;div class="card"&gt;
         &lt;div class="card-block layer"&gt;
@@ -230,70 +286,87 @@
     &lt;/div&gt;
                     </code>
                 </pre>
+        </div>
+      </section>
+      <section>
+        <h2>Horizontal Cards</h2>
+        <p>
+          By default, cards are vertical in nature. Another variant is a
+          horizontal card. For this, we need to use the
+          <span class="highlight">card-horizontal</span> class along with the
+          <span class="highlight">card</span>. Now,
+          <span class="highlight">card-block</span> or
+          <span class="highlight">card-padded-block</span> elements should now
+          be within <span class="highlight">card-column</span> instead of
+          <span class="highlight">card</span> directly. We can use one or more
+          <span class="highlight">card-column</span> elements.
+        </p>
+        <p>
+          Note: On mobile screens, horizontal cards show up as vertical cards
+          due to limited width availability.
+        </p>
+        <div class="container-flex demo">
+          <div class="card card-horizontal">
+            <div class="card-column">
+              <div class="card-block">
+                <img
+                  class="img-responsive"
+                  src="https://picsum.photos/400/400"
+                  alt="Sample image"
+                />
+              </div>
             </div>
-        </section>
-        <section>
-            <h2>Horizontal Cards</h2>
-            <p>
-                By default, cards are vertical in nature. Another variant is a horizontal card. For this, we need to use the
-                <span class="highlight">card-horizontal</span> class along with the <span class="highlight">card</span>. Now,
-                <span class="highlight">card-block</span> or <span class="highlight">card-padded-block</span> elements should
-                now be within <span class="highlight">card-column</span> instead of <span class="highlight">card</span> directly.
-                We can use one or more <span class="highlight">card-column</span> elements.
-            </p>
-            <p>
-                Note: On mobile screens, horizontal cards show up as vertical cards due to limited width availability.
-            </p>
-            <div class="container-flex demo">
-                <div class="card card-horizontal">
-                    <div class="card-column">
-                        <div class="card-block">
-                            <img class="img-responsive" src="https://picsum.photos/400/400" alt="Sample image">
-                        </div>
-                    </div>
-                    <div class="card-column">
-                        <div class="card-padded-block">
-                            <p class="title">Card Title</p>
-                            <p class="sub-title">Subtitle</p>
-                        </div>
-                        <div class="card-padded-block">
-                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="card-padded-block card-actions">
-                            <button class="btn btn-wide">Action</button>
-                            <button class="btn btn-wide btn-outline">Action</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-column">
+              <div class="card-padded-block">
+                <p class="title">Card Title</p>
+                <p class="sub-title">Subtitle</p>
+              </div>
+              <div class="card-padded-block">
+                <p class="text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="card-padded-block card-actions">
+                <button class="btn btn-wide">Action</button>
+                <button class="btn btn-wide btn-outline">Action</button>
+              </div>
+            </div>
+          </div>
 
-                <div class="card card-horizontal">
-                    <div class="card-column">
-                        <div class="card-block layer">
-                            <img class="img-responsive" src="https://picsum.photos/400/400" alt="Sample image">
-                            <button class="btn btn-outline overlay-top-left">
-                                <i class="fas fa-heart"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-column">
-                        <div class="card-padded-block">
-                            <p class="title">Card Title</p>
-                            <p class="sub-title">Subtitle</p>
-                        </div>
-                        <div class="card-padded-block">
-                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="card-column">
-                        <div class="card-padded-block card-actions">
-                            <button class="btn btn-wide">Action</button>
-                            <button class="btn btn-wide btn-outline">Action</button>
-                        </div>
-                    </div>
-                </div>
+          <div class="card card-horizontal">
+            <div class="card-column">
+              <div class="card-block layer">
+                <img
+                  class="img-responsive"
+                  src="https://picsum.photos/400/400"
+                  alt="Sample image"
+                />
+                <button class="btn btn-outline overlay-top-left">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
             </div>
-            <div class="container code">
-                <pre>
+            <div class="card-column">
+              <div class="card-padded-block">
+                <p class="title">Card Title</p>
+                <p class="sub-title">Subtitle</p>
+              </div>
+              <div class="card-padded-block">
+                <p class="text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="card-column">
+              <div class="card-padded-block card-actions">
+                <button class="btn btn-wide">Action</button>
+                <button class="btn btn-wide btn-outline">Action</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container code">
+          <pre>
                     <code>
     &lt;div class="card card-horizontal"&gt;
         &lt;div class="card-column"&gt;
@@ -324,54 +397,71 @@
     &lt;/div&gt;
                     </code>
                 </pre>
+        </div>
+      </section>
+      <section>
+        <h2>Cards with Shadow</h2>
+        <p>
+          If you want your card to have a shadow, you just need to use
+          <span class="highlight">card-shadow</span> class along with your card
+          class.
+        </p>
+        <div class="container-flex demo">
+          <div class="card card-shadow">
+            <div class="card-block">
+              <img
+                class="img-responsive"
+                src="https://picsum.photos/350/350"
+                alt="Sample image"
+              />
             </div>
-        </section>
-        <section>
-            <h2>Cards with Shadow</h2>
-            <p>
-                If you want your card to have a shadow, you just need to use <span class="highlight">card-shadow</span> class along with your card class.
-            </p>
-            <div class="container-flex demo">
-                <div class="card card-shadow">
-                    <div class="card-block">
-                        <img class="img-responsive" src="https://picsum.photos/350/350" alt="Sample image">
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="title">Card Title</p>
-                        <p class="sub-title">Subtitle</p>
-                    </div>
-                    <div class="card-padded-block">
-                        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora, quis quia officiis sequi eligendi quisquam atque soluta veniam nemo laborum fuga totam hic perspiciatis quasi, accusamus voluptatum reiciendis harum.</p>
-                    </div>
-                    <div class="card-padded-block card-actions">
-                        <button class="btn btn-wide">Action</button>
-                        <button class="btn btn-wide btn-outline">Action</button>
-                    </div>
-                </div>
+            <div class="card-padded-block">
+              <p class="title">Card Title</p>
+              <p class="sub-title">Subtitle</p>
+            </div>
+            <div class="card-padded-block">
+              <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptates tempora, quis quia officiis sequi eligendi quisquam
+                atque soluta veniam nemo laborum fuga totam hic perspiciatis
+                quasi, accusamus voluptatum reiciendis harum.
+              </p>
+            </div>
+            <div class="card-padded-block card-actions">
+              <button class="btn btn-wide">Action</button>
+              <button class="btn btn-wide btn-outline">Action</button>
+            </div>
+          </div>
 
-                <div class="card card-horizontal card-shadow">
-                    <div class="card-column">
-                        <div class="card-block layer">
-                            <img class="img-responsive" src="https://picsum.photos/400/400" alt="Sample image">
-                        </div>
-                    </div>
-                    <div class="card-column">
-                        <div class="card-padded-block">
-                            <p class="title">Card Title</p>
-                            <p class="sub-title">Subtitle</p>
-                        </div>
-                        <div class="card-padded-block">
-                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="card-padded-block card-actions">
-                            <button class="btn btn-wide">Action</button>
-                            <button class="btn btn-wide btn-outline">Action</button>
-                        </div>
-                    </div>
-                </div>
+          <div class="card card-horizontal card-shadow">
+            <div class="card-column">
+              <div class="card-block layer">
+                <img
+                  class="img-responsive"
+                  src="https://picsum.photos/400/400"
+                  alt="Sample image"
+                />
+              </div>
             </div>
-            <div class="container code">
-                <pre>
+            <div class="card-column">
+              <div class="card-padded-block">
+                <p class="title">Card Title</p>
+                <p class="sub-title">Subtitle</p>
+              </div>
+              <div class="card-padded-block">
+                <p class="text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="card-padded-block card-actions">
+                <button class="btn btn-wide">Action</button>
+                <button class="btn btn-wide btn-outline">Action</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container code">
+          <pre>
                     <code>
     &lt;div class="card card-shadow"&gt;
         &lt;div class="card-block"&gt;
@@ -391,16 +481,18 @@
     &lt;/div&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <a href="/">← Home</a>
-            </div>
-        </section>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <a href="/">← Home</a>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-</body>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>
