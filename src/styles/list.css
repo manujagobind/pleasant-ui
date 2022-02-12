@@ -1,0 +1,23 @@
+.list > li {
+    padding: 0.5rem;
+}
+
+.list.list-no-bullets {
+    padding: 0;
+    margin: 0;
+}
+
+.list.list-no-bullets > li {
+    list-style: none;
+}
+
+.list.list-stacked {
+    padding: 0;
+    margin: 0;
+}
+
+.list.list-stacked > li {
+    padding: 1rem;
+    list-style: none;
+    border-bottom: 1px solid var(--ink-grey-light);
+}
