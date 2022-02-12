@@ -20,15 +20,10 @@ body {
     text-transform: uppercase;
 }
 
-.text {
-    margin: 0;
-}
-
-.text.text-grey {
-    color: var(--ink-grey-light);
-}
-
-.text.text-center {
-    margin: 0;
+.center {
     text-align: center;
+}
+
+.ink-grey {
+    color: var(--ink-grey-light); 
 }
