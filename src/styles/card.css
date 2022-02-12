@@ -1,0 +1,57 @@
+:root {
+    --card-padding: 0.5rem;
+    --card-vertical-width: 20rem;
+    --card-border-radius: 10px;
+}
+
+.card {
+    box-sizing: border-box;
+    height: fit-content;
+    max-inline-size: 100%;
+    width: var(--card-vertical-width);
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ink-white);
+}
+
+.card.card-horizontal {
+    flex-direction: row;
+    width: fit-content;
+}
+
+.card.card-shadow {
+    box-shadow: 0px 8px 16px 0px var(--ink-grey-light);
+}
+
+.card .card-column {
+    box-sizing: border-box;
+    width: var(--card-vertical-width);
+}
+
+.card .card-block {
+    box-sizing: border-box;
+}
+
+.card .card-padded-block {
+    box-sizing: border-box;
+    padding: var(--card-padding);
+}
+
+.card.card-horizontal .card-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-block.card-actions,
+.card .card-padded-block.card-actions {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 550px) {
+    .card.card-horizontal {
+        flex-direction: column;
+        max-width: var(--card-vertical-width);
+    }
+}

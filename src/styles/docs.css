@@ -1,7 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css");
 
-@import url("./variables.css");
-
 :root {
     --w-demo-container: 50em;
 }
@@ -13,9 +11,14 @@
     overflow-x: scroll;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .code {
     max-width: var(--w-demo-container);
     padding: 0;
+}
+
+.highlight {
+    color: var(--ink-primary);
 }
