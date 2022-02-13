@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta name="description" content="Pleasant UI - A CSS component library." />
+    <title>Navigation | Pleasant UI</title>
+    <link rel="stylesheet" href="../styles/docs.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Navigation Component</h1>
+      <p>You can create a navigation component using <span class="highlight">nav</span> wrapper on a horizontal list.</p>
+    </header>
+    <main>
+      <section>
+        <div class="container demo">
+          <nav class="nav">
+            <div class="nav-brand">
+                <h1>Brand Name</h1>
+            </div>
+            <ul class="list list-horizontal">
+              <li>
+                <button class="btn btn-link">
+                  <a href="#">Item 1</a>
+                </button>
+              </li>
+              <li>
+                <button class="btn btn-link">
+                  <a href="#">Item 2</a>
+                </button>
+              </li>
+              <li class="list-item-active">
+                <button class="btn btn-link">
+                  <a href="#">Item 3</a>
+                </button>
+              </li>
+              <li>
+                <button class="btn btn-link">
+                  <a href="#">Item 4</a>
+                </button>
+              </li>
+            </ul>
+            <ul class="list list-horizontal m-left-auto">
+              <li>
+                <button class="btn btn-link">
+                  <i class="fas fa-search"></i>
+                </button>
+              </li>
+              <li>
+                <button class="btn btn-primary">Login</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container code">
+          <pre>
+                <code class="language-html">
+    &lt;nav class="nav"&gt;
+        &lt;div class="nav-brand"&gt;
+            &lt;h1>Brand Name&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;ul class="list list-horizontal"&gt;
+            &lt;li&gt;
+                &lt;button class="btn btn-link"&gt;
+                    &lt;a href="#">Item 1&lt;/a&gt;
+                &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;button class="btn btn-link"&gt;
+                    &lt;a href="#">Item 2&lt;/a&gt;
+                &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li class="list-item-active"&gt;
+                &lt;button class="btn btn-link"&gt;
+                    &lt;a href="#">Item 3&lt;/a&gt;
+                &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;button class="btn btn-link"&gt;
+                    &lt;a href="#">Item 4&lt;/a&gt;
+                &lt;/button&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="list list-horizontal m-left-auto"&gt;
+            &lt;li&gt;
+                &lt;button class="btn btn-link"&gt;
+                    &lt;i class="fas fa-search"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;button class="btn btn-primary"&gt;
+                    Login
+                &lt;/button&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+                </code>
+            </pre>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <a href="/">← Home</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

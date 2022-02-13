@@ -26,15 +26,20 @@
     right: 0.5rem;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .flex {
     display: flex;
+    align-items: center;
+}
+
+.flex.flex-end {
+    justify-content: flex-end;
 }
 
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.m-left-auto {
+    margin-left: auto;
 }
