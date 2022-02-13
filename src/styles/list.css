@@ -19,7 +19,7 @@
 .list.list-stacked > li {
     padding: 1rem;
     list-style: none;
-    border-bottom: 1px solid var(--ink-grey-light);
+    border-bottom: 1px solid var(--ink-primary);
 }
 
 .list.list-horizontal {
@@ -27,4 +27,22 @@
     margin: 0;
     display: flex;
     list-style: none;
+}
+
+
+.list .list-item-active {
+    background-color: var(--ink-primary);
+    color: white;
+}
+
+.list.list-horizontal .list-item-active {
+    border-bottom: 2px solid var(--ink-primary);
+    background-color: unset;
+    color: unset;
+}
+
+.list.list-stacked .list-item-active {
+    border-bottom: 2px solid var(--ink-primary);
+    background-color: var(--ink-primary);
+    color: white;
 }
