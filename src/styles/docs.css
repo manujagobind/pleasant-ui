@@ -40,6 +40,10 @@
         ;
     }
 
+    .docs aside {
+        width: 10rem;
+    }
+
     .docs > aside .list {
         display: unset;
     }
