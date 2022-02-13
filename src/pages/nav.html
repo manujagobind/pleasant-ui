@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gobind Manuja">
+    <meta name="description" content="Pleasant UI - A CSS component library.">
+    <title>Navigation | Pleasant UI</title>
+    <link rel="stylesheet" href="../styles/docs.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        .list > li {
+            padding: 0.5rem;
+        }
+
+        .list.list-no-bullets {
+            padding: 0;
+            margin: 0;
+        }
+        .list.list-no-bullets > li {
+            list-style: none;
+        }
+        .list.list-horizontal {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navigation Component</h1>
+    </header>
+    <main>
+        <section>
+            <div class="container demo">
+                <nav class="nav">
+                    <ul class="list list-horizontal">
+                        <li>
+                            <button class="btn btn-link">
+                                <a href="#" class="">Item 1</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-link">
+                                <a href="#">Item 2</a>
+                            </button>
+                        </li>
+                        <li class="nav-item-active">
+                            <button class="btn btn-link">
+                                <a href="#">Item 3</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-link">
+                                <a href="#">Item 4</a>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="list list-horizontal">
+                        <li>
+                            <button class="btn btn-link">
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary">
+                                Login
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container code">
+                <pre>
+                    <code class="language-html">
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <a href="/">← Home</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
