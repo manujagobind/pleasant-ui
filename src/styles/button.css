@@ -18,6 +18,11 @@
     gap: 0.3rem;
 }
 
+a.btn {
+    display: block;
+    text-decoration: none;
+}
+
 .btn a {
     text-decoration: none;
     color: inherit;
