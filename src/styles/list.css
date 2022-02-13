@@ -21,3 +21,10 @@
     list-style: none;
     border-bottom: 1px solid var(--ink-grey-light);
 }
+
+.list.list-horizontal {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
