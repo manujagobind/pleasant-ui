@@ -7,6 +7,7 @@
     <meta name="author" content="Gobind Manuja" />
     <meta name="description" content="Pleasant UI - A CSS component library." />
     <title>Pleasant UI</title>
+    <link rel="stylesheet" href="/src/styles/docs.css" />
     <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
   <body>
@@ -27,6 +28,17 @@
 
     <main>
       <section>
+        <p>To make use of this component library, you need use the following CSS and JS imports in your projects. Pleasant UI comes with pre-installed FontsAwesome library for icons. Check the docs <a href="https://fontawesome.com/v5.15/icons">here</a> for FontAwesome on how to use icons.</p>
+        <div class="code">
+          <pre>
+              <code class="language-css">
+@import url("https://pleasant-ui.netlify.app/src/styles/alert.css");
+              </code>
+              <code class="language-html">
+&lt;script src="https://pleasant-ui.netlify.app/src/scripts/alert.js"&gt;&lt;/script&gt;
+              </code>
+          </pre>
+          <p>PleasantUI currently supports the following components.</p>
         <ol>
           <li>
             <a href="/src/pages/alert.html">Alerts</a>
@@ -67,5 +79,10 @@
         Made by <a href="https://github.com/manujagobind">Gobind Manuja</a>.
       </p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

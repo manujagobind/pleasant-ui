@@ -1,7 +1,3 @@
-.list {
-    overflow: scroll;
-}
-
 .list > li {
     padding: 0.5rem;
 }

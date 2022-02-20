@@ -1,56 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gobind Manuja">
-    <meta name="description" content="Pleasant UI - A CSS component library.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta name="description" content="Pleasant UI - A CSS component library." />
     <title>Badges | Pleasant UI</title>
-    <link rel="stylesheet" href="../styles/docs.css">
-    <link rel="stylesheet" href="../styles/badge.css">
-    <link rel="stylesheet" href="../styles/avatar.css">
-    <link rel="stylesheet" href="../styles/image.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/docs.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body class="docs">
     <header>
-        <h1>Badge Component</h1>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>Pleasant UI</em></h1>
+        </div>
+        <ul class="list list-horizontal">
+          <li>
+            <button class="btn btn-primary">
+              <a href="https://github.com/manujagobind/pleasant-ui">GitHub</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <aside>
+      <ol class="list list-horizontal">
+        <li>
+          <a class="btn btn-link" href="/src/pages/alert.html">Alerts</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/avatar.html">Avatar</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/badge.html">Badge</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/button.html">Buttons</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/card.html">Cards</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/image.html">Images</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/input.html">Input</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/list.html">Lists</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/nav.html">Navigation</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/typography.html"
+            >Text Utilities</a
+          >
+        </li>
+      </ol>
+    </aside>
     <main>
-        <section>
-            <p>The following CSS import is required to use the badge component.<br>
-            <div class="container code">
-                <pre>
-                    <code class="language-css">
-    @import url("https://pleasant-ui.netlify.app/src/styles/badge.css");
-    @import url("https://pleasant-ui.netlify.app/src/styles/avatar.css");
-    @import url("https://pleasant-ui.netlify.app/src/styles/image.css");
-                    </code>
-                </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Badge on Avatars</h2>
-            <div class="container-flex demo">
-                <div class="avatar-xl has-badge">
-                    <img src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg" alt="Sample avatar" class="img-responsive img-round">
-                    <span class="badge badge-online"></span>
-                </div>
-                <div class="avatar-lg has-badge">
-                    <img src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg" alt="Sample avatar" class="img-responsive img-round">
-                    <span class="badge badge-offline"></span>
-                </div>
-                <div class="avatar-md has-badge">
-                    <img src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg" alt="Sample avatar" class="img-responsive img-round">
-                    <span class="badge badge-idle"></span>
-                </div>
-                <div class="avatar-sm has-badge">
-                    <img src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg" alt="Sample avatar" class="img-responsive img-round">
-                    <span class="badge badge-busy"></span>
-                </div>
-            </div>
-            <div class="container code">
-                <pre>
+      <section>
+        <h2>Badge on Avatars</h2>
+        <p>
+          To add a status badge to an avatar, use a
+          <span class="highlight">has-badge</span> class along with the avatar.
+          Within it add a <code>span</code> element with the status badge of
+          your choice. The available choices are
+          <span class="highlight">badge-online</span>,
+          <span class="highlight">badge-offline</span>,
+          <span class="highlight">badge-idle</span>, and
+          <span class="highlight">badge-busy</span>.
+        </p>
+        <div class="container-flex demo">
+          <div class="avatar-xl has-badge">
+            <img
+              src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg"
+              alt="Sample avatar"
+              class="img-responsive img-round"
+            />
+            <span class="badge badge-online"></span>
+          </div>
+          <div class="avatar-lg has-badge">
+            <img
+              src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg"
+              alt="Sample avatar"
+              class="img-responsive img-round"
+            />
+            <span class="badge badge-offline"></span>
+          </div>
+          <div class="avatar-md has-badge">
+            <img
+              src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg"
+              alt="Sample avatar"
+              class="img-responsive img-round"
+            />
+            <span class="badge badge-idle"></span>
+          </div>
+          <div class="avatar-sm has-badge">
+            <img
+              src="https://pbs.twimg.com/profile_images/1480212446656692228/t5R0Nxd8_400x400.jpg"
+              alt="Sample avatar"
+              class="img-responsive img-round"
+            />
+            <span class="badge badge-busy"></span>
+          </div>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;div class="avatar-xl has-badge"&gt;
         &lt;img src="https://picsum.photos/300/300" alt="Sample avatar" class="img-responsive img-round"&gt;
@@ -66,37 +125,46 @@
     &lt;/div&gt;
     &lt;div class="avatar-sm has-badge"&gt;
         &lt;img src="https://picsum.photos/300/300" alt="Sample avatar" class="img-responsive img-round"&gt;
-        &lt;span class="badge badge-bust"&gt;&lt;/span&gt;
+        &lt;span class="badge badge-busy"&gt;&lt;/span&gt;
     &lt;/div&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Badge on Icons</h2>
-            <div class="container-flex demo">
-                <i class="fas fa-heart has-badge">
-                    <span class="badge">30</span>
-                </i>
-            </div>
-            <div class="container code">
-                <pre>
+        </div>
+      </section>
+      <section>
+        <h2>Badge on Icons</h2>
+        <p>
+          To add a badge on icons, use the
+          <span class="highlight">has-badge</span> class along with the icon and
+          within it, add a <code>span</code> element with class
+          <span class="highlight">badge</span> and the badge content as text.
+        </p>
+        <div class="container-flex demo">
+          <i class="fas fa-heart has-badge">
+            <span class="badge">30</span>
+          </i>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;i class="fas fa-heart has-badge"&gt;
         &lt;span class="badge"&gt;30&lt;/span&gt;
     &lt;/i&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <a href="/">← Home</a>
-            </div>
-        </section>
+        </div>
+      </section>
     </main>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-</body>
+    <footer>
+      <div class="container">
+        <a href="/">← Home</a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>

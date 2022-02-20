@@ -1,32 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gobind Manuja">
-    <meta name="description" content="Pleasant UI - A CSS component library.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta name="description" content="Pleasant UI - A CSS component library." />
     <title>Lists | Pleasant UI</title>
-    <link rel="stylesheet" href="../styles/docs.css">
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/docs.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body class="docs">
     <header>
-        <h1>Lists Component</h1>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>Pleasant UI</em></h1>
+        </div>
+        <ul class="list list-horizontal">
+          <li>
+            <button class="btn btn-primary">
+              <a href="https://github.com/manujagobind/pleasant-ui">GitHub</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <aside>
+      <ol class="list list-horizontal">
+        <li>
+          <a class="btn btn-link" href="/src/pages/alert.html">Alerts</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/avatar.html">Avatar</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/badge.html">Badge</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/button.html">Buttons</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/card.html">Cards</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/image.html">Images</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/input.html">Input</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/list.html">Lists</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/nav.html">Navigation</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/typography.html"
+            >Text Utilities</a
+          >
+        </li>
+      </ol>
+    </aside>
     <main>
-        <section>
-            <h2>Un-ordered List</h2>
-            <div class="container demo">
-                <ul class="list">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </div>
-            <div class="container code">
-                <pre>
+      <section>
+        <h2>Lists</h2>
+        Lists are ordered or un-ordered collection of items. Use class
+        <span class="highlight">list</span> on the <code>ol</code> or
+        <code>ul</code> elements.
+      </section>
+      <section>
+        <h2>Un-ordered List</h2>
+        <div class="container demo">
+          <ul class="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;ul class="list"&gt;
         &lt;li&gt;Item 1&lt;/li&gt;
@@ -36,20 +89,20 @@
     &lt;/ul&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Ordered List</h2>
-            <div class="container demo">
-                <ol class="list">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ol>
-            </div>
-            <div class="container code">
-                <pre>
+        </div>
+      </section>
+      <section>
+        <h2>Ordered List</h2>
+        <div class="container demo">
+          <ol class="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ol>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;ol class="list"&gt;
         &lt;li&gt;Item 1&lt;/li&gt;
@@ -59,20 +112,28 @@
     &lt;/ol&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <h2>List with no bullets</h2>
-            <div class="container demo">
-                <ul class="list list-no-bullets">
-                    <li>Item 1</li>
-                    <li class="list-item-active">Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </div>
-            <div class="container code">
-                <pre>
+        </div>
+      </section>
+      <section>
+        <h2>List with no bullets</h2>
+        <p>
+          Use an additional class
+          <span class="highlight">list-no-bullets</span> along with the
+          <span class="highlight">list</span>
+          element. Optionally, a
+          <span class="highlight">list-item-active</span> can be used with the
+          list item elemnt to denote the selected list item.
+        </p>
+        <div class="container demo">
+          <ul class="list list-no-bullets">
+            <li>Item 1</li>
+            <li class="list-item-active">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;ul class="list list-no-bullets"&gt;
         &lt;li&gt;Item 1&lt;/li&gt;
@@ -82,20 +143,28 @@
     &lt;/ul&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Horizontal List</h2>
-            <div class="container demo">
-                <ul class="list list-horizontal">
-                    <li>Item 1</li>
-                    <li class="list-item-active">Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </div>
-            <div class="container code">
-                <pre>
+        </div>
+      </section>
+      <section>
+        <h2>Horizontal List</h2>
+        <p>
+          Horizontal list are great for navigation elements. Use an additional
+          class <span class="highlight">list-horizontal</span> along with the
+          <span class="highlight">list</span>
+          element. Optionally, a
+          <span class="highlight">list-item-active</span> can be used with the
+          list item elemnt to denote the selected list item.
+        </p>
+        <div class="container demo">
+          <ul class="list list-horizontal">
+            <li>Item 1</li>
+            <li class="list-item-active">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;ul class="list list-horizontal"&gt;
         &lt;li&gt;Item 1&lt;/li&gt;
@@ -105,20 +174,29 @@
     &lt;/ul&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Stacked List</h2>
-            <div class="container demo">
-                <ul class="list list-stacked">
-                    <li>Item 1</li>
-                    <li class="list-item-active">Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </div>
-            <div class="container code">
-                <pre>
+        </div>
+      </section>
+      <section>
+        <h2>Stacked List</h2>
+        <p>
+          This is a vertical list with borders between list items. Use an
+          additional class <span class="highlight">list-stacked</span> along
+          with the
+          <span class="highlight">list</span>
+          element. Optionally, a
+          <span class="highlight">list-item-active</span> can be used with the
+          list item elemnt to denote the selected list item.
+        </p>
+        <div class="container demo">
+          <ul class="list list-stacked">
+            <li>Item 1</li>
+            <li class="list-item-active">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;ul class="list list-stacked"&gt;
         &lt;li&gt;Item 1&lt;/li&gt;
@@ -128,16 +206,19 @@
     &lt;/ul&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <a href="/">← Home</a>
-            </div>
-        </section>
+        </div>
+      </section>
     </main>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-</body>
+    <footer>
+      <div class="container">
+        <a href="/">← Home</a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>

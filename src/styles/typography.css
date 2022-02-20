@@ -24,6 +24,10 @@ body {
     text-align: center;
 }
 
+.strike {
+    text-decoration: line-through;
+}
+
 .ink-grey {
     color: var(--ink-grey-light); 
 }

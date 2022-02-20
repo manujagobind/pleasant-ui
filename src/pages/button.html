@@ -1,46 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gobind Manuja">
-    <meta name="description" content="Pleasant UI - A CSS component library.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta name="description" content="Pleasant UI - A CSS component library." />
     <title>Buttons | Pleasant UI</title>
-    <link rel="stylesheet" href="../styles/docs.css">
-    <link rel="stylesheet" href="../styles/button.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/docs.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body class="docs">
     <header>
-        <h1>Button Component</h1>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>Pleasant UI</em></h1>
+        </div>
+        <ul class="list list-horizontal">
+          <li>
+            <button class="btn btn-primary">
+              <a href="https://github.com/manujagobind/pleasant-ui">GitHub</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <aside>
+      <ol class="list list-horizontal">
+        <li>
+          <a class="btn btn-link" href="/src/pages/alert.html">Alerts</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/avatar.html">Avatar</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/badge.html">Badge</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/button.html">Buttons</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/card.html">Cards</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/image.html">Images</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/input.html">Input</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/list.html">Lists</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/nav.html">Navigation</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/typography.html"
+            >Text Utilities</a
+          >
+        </li>
+      </ol>
+    </aside>
+
     <main>
-        <section>
-            <p>The following CSS imports are required to use the buttons component.<br>
-                The FontAwesome import is required only if you plan to use buttons with icons.</p>
-            <div class="container code">
-                <pre>
-                    <code class="language-css">
-    @import url("https://pleasant-ui.netlify.app/src/styles/button.css");
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-                    </code>
-                </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Basic</h2>
-            <div class="container-flex demo">
-                <button class="btn">Solid</button>
-                <button class="btn btn-outline">Outline</button>
-                <button class="btn btn-link">Link</button>
-            </div>
-            <div class="container-flex demo">
-                <button class="btn btn-danger"><a href="#">Danger</a></button>
-                <button class="btn btn-danger btn-outline">Danger</button>
-                <button class="btn btn-danger btn-link">Danger</button>
-            </div>
-            <div class="container code">
-                <pre>
+      <section>
+        <h2>Buttons</h2>
+        <p>
+          Use the <span class="highlight">btn</span> class on
+          <code>button</code> or <code>a</code> elements. We currently support 3
+          types of buttons: solid, outline and link. Solid is the default and
+          uses the primary color as background. For outline buttons, use
+          <span class="highlight">btn-outline</span> class along with the
+          <span class="highlight">btn</span> class. For link buttons, use
+          <span class="highlight">btn-link</span> class along with the
+          <span class="highlight">btn</span> class. An additional class
+          <span class="highlight">btn-danger</span> can be used along with any
+          of these types if you want a red button.
+        </p>
+        <div class="container-flex demo">
+          <button class="btn">Solid</button>
+          <button class="btn btn-outline">Outline</button>
+          <button class="btn btn-link">Link</button>
+        </div>
+        <div class="container-flex demo">
+          <button class="btn btn-danger"><a href="#">Danger</a></button>
+          <button class="btn btn-danger btn-outline">Danger</button>
+          <button class="btn btn-danger btn-link">Danger</button>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;button class="btn"&gt;Solid&lt;/button&gt;
     &lt;button class="btn btn-outline"&gt;Outline&lt;/button&gt;
@@ -51,51 +99,52 @@
     &lt;button class="btn btn-danger btn-link"&gt;Danger&lt;/button&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Icon Buttons</h2>
-            <div class="container-flex demo">
-                <button class="btn">
-                    <i class="fas fa-heart"></i>
-                    Solid
-                </button>
-                <button class="btn btn-outline">
-                    <i class="fas fa-heart"></i>
-                    Outline
-                </button>
-                <button class="btn btn-link">
-                    <i class="fas fa-heart"></i>
-                    Link
-                </button>
-            </div>
-            <div class="container-flex demo">
-                <button class="btn">
-                    <i class="fas fa-heart"></i>
-                </button>
-                <button class="btn btn-outline">
-                    <i class="fas fa-heart"></i>
-                </button>
-                <button class="btn btn-link">
-                    <i class="fas fa-heart"></i>
-                </button>
-            </div>
-            <div class="container-flex demo">
-                <button class="btn btn-danger">
-                    <i class="fas fa-exclamation-circle"></i>
-                    Danger
-                </button>
-                <button class="btn btn-danger btn-outline">
-                    <i class="fas fa-exclamation-circle"></i>
-                    Danger
-                </button>
-                <button class="btn btn-danger btn-link">
-                    <i class="fas fa-exclamation-circle"></i>
-                    Danger
-                </button>
-            </div>
-            <div class="container code">
-                <pre>
+        </div>
+      </section>
+      <section>
+        <h2>Icon Buttons</h2>
+        <p>Buttons can have both icons and text.</p>
+        <div class="container-flex demo">
+          <button class="btn">
+            <i class="fas fa-heart"></i>
+            Solid
+          </button>
+          <button class="btn btn-outline">
+            <i class="fas fa-heart"></i>
+            Outline
+          </button>
+          <button class="btn btn-link">
+            <i class="fas fa-heart"></i>
+            Link
+          </button>
+        </div>
+        <div class="container-flex demo">
+          <button class="btn">
+            <i class="fas fa-heart"></i>
+          </button>
+          <button class="btn btn-outline">
+            <i class="fas fa-heart"></i>
+          </button>
+          <button class="btn btn-link">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <div class="container-flex demo">
+          <button class="btn btn-danger">
+            <i class="fas fa-exclamation-circle"></i>
+            Danger
+          </button>
+          <button class="btn btn-danger btn-outline">
+            <i class="fas fa-exclamation-circle"></i>
+            Danger
+          </button>
+          <button class="btn btn-danger btn-link">
+            <i class="fas fa-exclamation-circle"></i>
+            Danger
+          </button>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;button class="btn"&gt;
         &lt;i class="fas fa-heart"&gt;&lt;/i&gt;
@@ -128,24 +177,28 @@
     &lt;/button&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Full Width</h2>
-            <div class="container-flex-col demo">
-                <button class="btn btn-wide">Solid</button>
-                <button class="btn btn-wide">
-                    <i class="fas fa-heart"></i>
-                    Solid
-                </button>
-                <button class="btn btn-wide btn-outline">Outline</button>
-                <button class="btn btn-wide btn-outline">
-                    <i class="fas fa-heart"></i>
-                    Outline
-                </button>
-            </div>
-            <div class="container code">
-                <pre>
+        </div>
+      </section>
+      <section>
+        <h2>Full Width</h2>
+        <p>
+          Use an additional class <span class="highlight">btn-wide</span> for a
+          button that takes full width of its parent.
+        </p>
+        <div class="container-flex-col demo">
+          <button class="btn btn-wide">Solid</button>
+          <button class="btn btn-wide">
+            <i class="fas fa-heart"></i>
+            Solid
+          </button>
+          <button class="btn btn-wide btn-outline">Outline</button>
+          <button class="btn btn-wide btn-outline">
+            <i class="fas fa-heart"></i>
+            Outline
+          </button>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;button class="btn btn-wide"&gt;Solid&lt;/button&gt;
     &lt;button class="btn btn-wide"&gt;
@@ -159,11 +212,19 @@
     &lt;/button&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
+        </div>
+      </section>
     </main>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll()</script>
-</body>
+    <footer>
+      <div class="container">
+        <a href="/">← Home</a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>

@@ -10,17 +10,66 @@
     <link rel="stylesheet" href="../styles/docs.css" />
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
-  <body>
+  <body class="docs">
     <header>
-      <h1>Navigation Component</h1>
-      <p>You can create a navigation component using <span class="highlight">nav</span> wrapper on a horizontal list.</p>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>Pleasant UI</em></h1>
+        </div>
+        <ul class="list list-horizontal">
+          <li>
+            <button class="btn btn-primary">
+              <a href="https://github.com/manujagobind/pleasant-ui">GitHub</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <aside>
+      <ol class="list list-horizontal">
+        <li>
+          <a class="btn btn-link" href="/src/pages/alert.html">Alerts</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/avatar.html">Avatar</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/badge.html">Badge</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/button.html">Buttons</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/card.html">Cards</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/image.html">Images</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/input.html">Input</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/list.html">Lists</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/nav.html">Navigation</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/typography.html"
+            >Text Utilities</a
+          >
+        </li>
+      </ol>
+    </aside>
     <main>
       <section>
+        <h2>Navigation</h2>
+        <p>A navigation element is generally used on the header and has links to different section of the website. To create a navigation component, enclose a horizontal list within a <code>div</code> element with a <span class="highlight">nav</span> class. A <span class="highlight">nav-brand</span> class can be used for the site's brand.</p>
+        <p>Read more about horizontal lists <a href="/src/pages/list.html">here</a>.</p>
         <div class="container demo">
           <nav class="nav">
             <div class="nav-brand">
-                <h1>Brand Name</h1>
+              <h1>Brand Name</h1>
             </div>
             <ul class="list list-horizontal">
               <li>
@@ -102,14 +151,15 @@
             </pre>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <a href="/">← Home</a>
-        </div>
-      </section>
     </main>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <footer>
+      <div class="container">
+        <a href="/">← Home</a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
     </script>

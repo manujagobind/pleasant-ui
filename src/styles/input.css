@@ -1,5 +1,3 @@
-@import url("./core.css");
-
 .form {
     display: flex;
     flex-direction: column;
@@ -18,14 +16,14 @@
 .form .input-group label {
    padding: 0.5em 0;
    color: var(--ink-grey-dark);
-   font-weight: bold;
+   font-weight: 400;
 }
 
 .form .input-group input {
     padding: 0.8em;
     color: var(--ink-grey-light);
     background-color: var(--ink-white);
-    border: none;
+    border: 1px solid var(--ink-grey-light);
 }
 
 .form .input-group.warn input {

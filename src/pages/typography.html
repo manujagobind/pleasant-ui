@@ -10,10 +10,57 @@
     <link rel="stylesheet" href="../styles/docs.css" />
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
-  <body>
+  <body class="docs">
     <header>
-      <h1>Text Utilities</h1>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>Pleasant UI</em></h1>
+        </div>
+        <ul class="list list-horizontal">
+          <li>
+            <button class="btn btn-primary">
+              <a href="https://github.com/manujagobind/pleasant-ui">GitHub</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <aside>
+      <ol class="list list-horizontal">
+        <li>
+          <a class="btn btn-link" href="/src/pages/alert.html">Alerts</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/avatar.html">Avatar</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/badge.html">Badge</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/button.html">Buttons</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/card.html">Cards</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/image.html">Images</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/input.html">Input</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/list.html">Lists</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/nav.html">Navigation</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/typography.html"
+            >Text Utilities</a
+          >
+        </li>
+      </ol>
+    </aside>
     <main>
       <section>
         <h2>Headings</h2>
@@ -40,6 +87,15 @@
       </section>
       <section>
         <h2>Titles</h2>
+        <p>
+          Provides classes <span class="highlight">title</span> and
+          <span class="highlight">sub-title</span> to be used for section
+          headings and sub-headings respectively. The
+          <span class="highlight">title</span> appears in bold and the
+          <span class="highlight">sub-title</span> in grey. The
+          <span class="highlight">sub-title</span> also appears closer to the
+          element before it.
+        </p>
         <div class="container demo">
           <p class="title">This is the title.</p>
           <p class="sub-title">This is the sub-title.</p>
@@ -61,6 +117,11 @@
       </section>
       <section>
         <h2>Text</h2>
+        <p>
+          Provides classes <span class="highlight">upper</span>,
+          <span class="highlight">ink-grey</span>, and
+          <span class="highlight">center</span>.
+        </p>
         <div class="container demo">
           <p>This is a simple text.</p>
           <p class="ink-grey">This is a simple grey text.</p>
@@ -78,12 +139,13 @@
           </pre>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <a href="/">← Home</a>
-        </div>
-      </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <a href="/">← Home</a>
+      </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>

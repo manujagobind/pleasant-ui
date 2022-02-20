@@ -1,66 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gobind Manuja">
-    <meta name="description" content="Pleasant UI - A CSS component library.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gobind Manuja" />
+    <meta name="description" content="Pleasant UI - A CSS component library." />
     <title>Alerts | Pleasant UI</title>
-    <link rel="stylesheet" href="../styles/docs.css">
-    <link rel="stylesheet" href="../styles/alert.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/docs.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body class="docs">
     <header>
-        <h1>Alerts Component</h1>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><em>Pleasant UI</em></h1>
+        </div>
+        <ul class="list list-horizontal">
+          <li>
+            <button class="btn btn-primary">
+              <a href="https://github.com/manujagobind/pleasant-ui">GitHub</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <aside>
+      <ol class="list list-horizontal">
+        <li>
+          <a class="btn btn-link" href="/src/pages/alert.html">Alerts</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/avatar.html">Avatar</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/badge.html">Badge</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/button.html">Buttons</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/card.html">Cards</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/image.html">Images</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/input.html">Input</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/list.html">Lists</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/nav.html">Navigation</a>
+        </li>
+        <li>
+          <a class="btn btn-link" href="/src/pages/typography.html"
+            >Text Utilities</a
+          >
+        </li>
+      </ol>
+    </aside>
     <main>
-        <section>
-            <p>The following CSS import is required to use the alerts component.<br>
-                The FontAwesome import is required only if you plan to use icons in your alerts.</p>
-            <div class="container code">
-                <pre>
-                    <code class="language-css">
-    @import url("https://pleasant-ui.netlify.app/src/styles/alert.css");
-    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-                    </code>
-                </pre>
-            </div>
-            <p>The following JS imports are needed in your HTML file if you want to use alerts with close buttons.<br>
-                This needs to be done at the end of the HTML file so that the DOM is loaded.</p>
-            <div class="container code">
-                <pre>
-                    <code class="language-html">
-    &lt;script src="https://pleasant-ui.netlify.app/src/scripts/alert.js"&gt;&lt;/script&gt;
-                    </code>
-                </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Simple Alerts</h2>
-            <p>Alerts take 80% of the parent container's width and are center aligned.<br>
-                You can also add icons to the alerts if you'd like.</p>
-            <div class="container-flex-col demo">
-                <div class="alert alert-info">
-                    <i class="fas fa-question-circle"></i>
-                    <p>This is an info alert.</p>
-                </div>
-                <div class="alert alert-warn">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <p>This is a warning alert.</p>
-                </div>
-                <div class="alert alert-success">
-                    <i class="fas fa-check-circle"></i>
-                    <p>This is a success alert.</p>
-                </div>
-                <div class="alert alert-danger">
-                    <i class="fas fa-times-circle"></i>
-                    <p>This is a danger alert.</p>
-                </div>
-            </div>
-            <div class="container code">
-                <pre>
-                    <code class="language-html">
+      <section>
+        <h2>Simple Alerts</h2>
+        <p>
+          An alert is used to bring an important notice before the eyes of the
+          user.
+        </p>
+        <p>
+          To create an alert, you can enclose your text message and optional
+          icons within a <code>div</code> element decorated with the
+          <span class="highlight">alert</span> class. You can additionally use
+          one of <span class="highlight">alert-info</span>,
+          <span class="highlight">alert-warn</span>,
+          <span class="highlight">alert-success</span>,
+          <span class="highlight">alert-danger</span> classes to signify the
+          type of alert.
+        </p>
+        <p>
+          Alerts take 80% of the parent container's width and are center
+          aligned. You can also add icons to the alerts if you'd like.
+        </p>
+        <div class="container-flex-col demo">
+          <div class="alert alert-info">
+            <i class="fas fa-question-circle"></i>
+            <p>This is an info alert.</p>
+          </div>
+          <div class="alert alert-warn">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>This is a warning alert.</p>
+          </div>
+          <div class="alert alert-success">
+            <i class="fas fa-check-circle"></i>
+            <p>This is a success alert.</p>
+          </div>
+          <div class="alert alert-danger">
+            <i class="fas fa-times-circle"></i>
+            <p>This is a danger alert.</p>
+          </div>
+      </div>
+      <div class="container code">
+        <pre>
+          <code class="language-html">
     &lt;div class="alert alert-info"&gt;
         &lt;i class="fas fa-question-circle"&gt;&lt;/i&gt;
         &lt;p&gt;This is an info alert.&lt;/p&gt;
@@ -77,38 +119,39 @@
         &lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;
         &lt;p&gt;This is a danger alert.&lt;/p&gt;
     &lt;/div&gt;
-                    </code>
-                </pre>
-            </div>
-        </section>
-        <section>
-            <h2>Alerts With Close Button</h2>
-            <p>Alerts take 80% of the parent container's width and are center aligned.<br>
-                You can also add icons to the alerts if you'd like.</p>
-            <div class="container-flex-col demo">
-                <div class="alert alert-info">
-                    <i class="fas fa-question-circle"></i>
-                    <p>This is an info alert.</p>
-                    <i class="fas fa-times alert-close"></i>
-                </div>
-                <div class="alert alert-warn">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <p>This is a warning alert.</p>
-                    <i class="fas fa-times alert-close"></i>
-                </div>
-                <div class="alert alert-success">
-                    <i class="fas fa-check-circle"></i>
-                    <p>This is a success alert.</p>
-                    <i class="fas fa-times alert-close"></i>
-                </div>
-                <div class="alert alert-danger">
-                    <i class="fas fa-times-circle"></i>
-                    <p>This is a danger alert.</p>
-                    <i class="fas fa-times alert-close"></i>
-                </div>
-            </div>
-            <div class="container code">
-                <pre>
+            </code>
+          </pre>
+        </div>
+      </section>
+      <section>
+        <h2>Alerts With Close Button</h2>
+        <p>
+          To use dismissable alerts, provide an icon of your choice with the <span class="highlight">alert-close</span> class within the alert element.
+        </p>
+        <div class="container-flex-col demo">
+          <div class="alert alert-info">
+            <i class="fas fa-question-circle"></i>
+            <p>This is an info alert.</p>
+            <i class="fas fa-times alert-close"></i>
+          </div>
+          <div class="alert alert-warn">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>This is a warning alert.</p>
+            <i class="fas fa-times alert-close"></i>
+          </div>
+          <div class="alert alert-success">
+            <i class="fas fa-check-circle"></i>
+            <p>This is a success alert.</p>
+            <i class="fas fa-times alert-close"></i>
+          </div>
+          <div class="alert alert-danger">
+            <i class="fas fa-times-circle"></i>
+            <p>This is a danger alert.</p>
+            <i class="fas fa-times alert-close"></i>
+          </div>
+        </div>
+        <div class="container code">
+          <pre>
                     <code class="language-html">
     &lt;div class="alert alert-info"&gt;
         &lt;i class="fas fa-question-circle"&gt;&lt;/i&gt;
@@ -132,17 +175,20 @@
     &lt;/div&gt;
                     </code>
                 </pre>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <a href="/">← Home</a>
-            </div>
-        </section>
+        </div>
+      </section>
     </main>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    <script src="/src/scripts/alert.js"></script>
-</body>
+    <footer>
+      <div class="container">
+        <a href="/">← Home</a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="/src/scripts/main.js"></script>
+  </body>
 </html>

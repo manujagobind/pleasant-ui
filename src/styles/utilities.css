@@ -31,13 +31,42 @@
     align-items: center;
 }
 
-.flex.flex-end {
+.flex-end {
     justify-content: flex-end;
 }
 
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-gap {
+    gap: 1rem;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.w-full {
+    width: 100%;
 }
 
 .m-left-auto {
