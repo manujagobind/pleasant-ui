@@ -33,15 +33,12 @@
         grid-template-areas:
             "header  header header header"
             "aside   main   main   main"
-            "aside   main   main   main"
-            "aside   main   main   main"
-            "aside   main   main   main"
             "footer  footer footer footer"
         ;
     }
 
     .docs aside {
-        width: 10rem;
+        width: 15rem;
     }
 
     .docs > aside .list {
