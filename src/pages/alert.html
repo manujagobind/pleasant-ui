@@ -65,9 +65,22 @@
       <section>
         <h2>Simple Alerts</h2>
         <p>
+          An alert is used to bring an important notice before the eyes of the
+          user.
+        </p>
+        <p>
+          To create an alert, you can enclose your text message and optional
+          icons within a <code>div</code> element decorated with the
+          <span class="highlight">alert</span> class. You can additionally use
+          one of <span class="highlight">alert-info</span>,
+          <span class="highlight">alert-warn</span>,
+          <span class="highlight">alert-success</span>,
+          <span class="highlight">alert-danger</span> classes to signify the
+          type of alert.
+        </p>
+        <p>
           Alerts take 80% of the parent container's width and are center
-          aligned.<br />
-          You can also add icons to the alerts if you'd like.
+          aligned. You can also add icons to the alerts if you'd like.
         </p>
         <div class="container-flex-col demo">
           <div class="alert alert-info">
@@ -113,9 +126,7 @@
       <section>
         <h2>Alerts With Close Button</h2>
         <p>
-          Alerts take 80% of the parent container's width and are center
-          aligned.<br />
-          You can also add icons to the alerts if you'd like.
+          To use dismissable alerts, provide an icon of your choice with the <span class="highlight">alert-close</span> class within the alert element.
         </p>
         <div class="container-flex-col demo">
           <div class="alert alert-info">
