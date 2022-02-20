@@ -28,7 +28,7 @@
     grid-area: footer;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1120px) {
     .docs {
         grid-template-areas:
             "header  header header header"
@@ -37,8 +37,9 @@
         ;
     }
 
-    .docs aside {
+    .docs > aside {
         width: 15rem;
+        overflow-x: unset;
     }
 
     .docs > aside .list {
